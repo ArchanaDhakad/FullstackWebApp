@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register user</title>
+</head>
+<body>
+  <form>
+    <dl>
+      <dt>User Name</dt>
+      <dd><input type="text" required></dd>
+      <dt>Password</dt>
+      <dd><input type="password" required></dd>
+      <dt>Age</dt>
+      <dd>
+        <input min="15" step="1" max="25" type="number" name="age" required>
+      </dd>
+        <dt>price</dt>
+        <dd>
+          <input min="0" value="2000" max="10000" type="range" name="price" required>
+        </dd>
+        <dt>Birthday</dt>
+        <dd>
+          <input type="date" name="birthday" required>
+        </dd>
+        <dt>website</dt>
+        <dd>
+          <input type="url" name="website" required>
+        </dd>
+        <dt>email</dt>
+        <dd>
+          <input type="email" name="email" required>
+        </dd>
+        <dt>phone</dt>
+        <dd>
+          <input type="tel" name="phone" required>
+        </dd>
+        <dt>Gender</dt>
+        <dd>
+            <input type="radio" name="gender" value="male" required > male
+            <input type="radio" name="gender" value="female" required > female
+            <input type="radio" name="gender" value="other" required> other
+          <!-- <select name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select> -->
+        </dd>
+        <dt>Payment mode</dt>
+        <dd>
+            <input type="radio" name="payment" value="cash" required > cash
+            <input type="radio" name="payment" value="card" required > card
+            <input type="radio" name="payment" value="upi" required> upi
+        </dd>
+        <dt>upload your photo</dt>
+        <dd>
+          <input type="file" name="photo" required>
+        </dd>
+
+        <dt>upload your resume </dt>
+        <dd>
+          <input type="file" ACCEPT=".JPG, .PNG" name="resume" required>
+        </dd>
+    
+        <dt>Select a color</dt>
+        <dd>
+          <input type="color" name="color" required>
+        </dd>
+    </dl>
+
+    <dt>select courses
+    </dt>
+    <dd>
+      <input type="checkbox" name="course" value="html" required> HTML
+      <input type="checkbox" name="course" value="css" required> CSS
+      <input type="checkbox" name="course" value="js" required> JavaScript
+    </dd>
+
+
+    <dt>select courses
+    </dt>
+    <dd>
+    <ul>
+      <li><input type="checkbox" name="course" value="html" required> HTML</li>
+      <li><input type="checkbox" name="course" value="css" required> CSS</li>
+      <li><input type="checkbox" name="course" value="js" required> JavaScript</li>
+    </ul>
+    </dd>
+
+
+    
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

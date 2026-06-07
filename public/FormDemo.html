@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Demo</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            width: 300px;
+            height: 400px;
+            border: 1px solid #cf9f9f;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: #eedee9;
+        
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h2>Register User</h2>
+    <form method="POST" action="/submit-form">
+        User name: <input type="text" name="username" required><br><br>
+        Your Email: <input type="email" name="email" required><br><br>
+        password: <input type="password" name="password" required><button>Submit</button><br><br>
+        
+    </form>
+</body>
+</html>

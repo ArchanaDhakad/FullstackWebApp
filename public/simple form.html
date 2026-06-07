@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* Registration form inputs */
+    input[type="text"], input[type="tel"], input[type="email"], input[type="password"] {
+      border: 1px solid #ccc;
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 250px;
+      border-radius: 4px;
+    }
+
+    /* Google search bar style */
+    #search-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      padding: 8px 15px;
+      width: 500px;
+      margin: 20px auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    #search-box input {
+      border: none;
+      outline: none;
+      flex: 1;
+      font-size: 16px;
+    }
+
+    #search-box .bi-search {
+      color: #555;
+      font-size: 18px;
+      margin-left: 10px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #4285F4;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #357ae8;
+    }
+  </style>
+</head>
+<body>
+  <h3>Register User</h3>
+  <form>
+    <dl>
+      <dt>User Name:</dt>
+      <dd><input type="text" name="username" placeholder="Enter your username"></dd>
+      <dt>Mobile Number:</dt>
+      <dd><input type="tel" name="phone" placeholder="Enter your mobile number"></dd>
+      <dt>Email:</dt>
+      <dd><input type="email" name="email" placeholder="Enter your email"></dd>
+      <dt>Password:</dt>
+      <dd><input type="password" name="password" placeholder="Enter your password"></dd>
+    </dl>
+
+    <h2>Google</h2>
+    <div id="search-box">
+      <input type="search" placeholder="Search Google or type a URL">
+      <span class="bi bi-search"></span>
+    </div>
+
+    <button>Google Search</button>
+  </form>
+</body>
+</html>

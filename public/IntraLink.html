@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intra Link</title>
+    <style>
+        .topic {
+            border: 2px solid #171717;
+            padding: 20px;
+            margin: 10px;
+            background-color: #ae8a8a;
+            width: 300px;
+            color: #171717;
+             box-shadow: 3px 2px 1px 1px rgba(0,0,0,0.2);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+           
+        }
+        .topic:hover {
+            background-color: #dacbcb;
+            color: #bf7d7d;
+        }
+        .topic:target {
+            background-color: #dacbcb;
+            color: #171717;
+        }
+        li {
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="#Intra link">Intra Link</a></li>
+            <li><a href="#HTML">HTML</a></li>
+            <li><a href="#Css">Css</a></li>
+            <li><a href="#JavaScript">JavaScript</a></li>
+        </ul>
+    </div>
+    <div class="topic" id="Intra link">
+        <h1>Intra Link</h1>
+        <p>A hyperlink that navigates from one location to another location within the same document</p>
+    </div>
+
+
+    <div class="topic" id="HTML">
+        <h1>HTML</h1>
+        <p>A markup language used to create hypertext</p>     
+    </div>
+
+
+    <div class="topic" id="Css">
+        <h1>Css</h1>
+        <p>A stylesheet language used to describe the presentation of a document written in HTML</p>
+    </div>
+
+    <div class="topic" id="JavaScript">
+        <h1>JavaScript</h1>
+        <p>A programming language used to create interactive effects within web browsers</p>
+    </div>
+</body>
+</html>

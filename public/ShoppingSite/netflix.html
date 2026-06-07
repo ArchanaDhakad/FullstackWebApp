@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+    body {
+  background-image: url("../assets/netflix.jpg"); /* apni collage image ka path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0px;
+}
+.overlay {
+  background-color: rgba(0,0,0,0.6); /* semi-transparent black */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.input-box {
+  margin-top: 20px;
+}
+.input-box input {
+  padding: 12px;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+.input-box button {
+  padding: 12px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.input-box button:hover {
+  background-color: darkred;
+}
+
+.navbar {
+  width: 100%;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: space-between; /* logo left, button right */
+  align-items: center;
+  position: fixed; /* navbar top par fix ho jaayega */
+  top: 0;
+  left: 0px;
+  background: transparent; 
+  z-index:2000; /* ya black overlay */
+}
+
+.logo {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 32px;
+  color: #e50914; /* Netflix red */
+  padding: 30px 50px;
+  letter-spacing: 2px;
+  display: inline-block;
+  text-transform: uppercase;
+  transform: skewX(-10deg); /* thoda tilt */
+  text-shadow: 2px 2px 4px black;
+  border-radius: 12px; /* border radius */
+  background-color: rgba(255, 255, 255, 0.1); /* thoda background for better visibility */
+}
+.nav-right {
+  position: relative;
+  display: inline-block;
+  background: url("https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/globe.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 18px;
+}
+
+
+
+.language {
+  padding: 6px 6px 6px 30px; /* left padding zyada taki icon ke liye jagah ho */
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  background: url("../../node_modules/bootstrap-icons/font/bootstrap-icons.css");
+  background-repeat: no-repeat;
+  background-size: 18px ;
+  background-position: left center;
+  background-color: #fffffffd; /* thoda background for better visibility */
+  background-size: 18px;
+  background-position: left center;
+}
+
+
+.signin {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+.signin:hover {
+  background-color: darkred;
+
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 70px 0px;
+  top: 30px;
+  left: 30px;
+  width: 100%;
+  z-index: 2000; /* overlay se upar */
+}
+select {
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 2000; /* overlay se upar */
+  position: relative;
+}
+footer {
+  top: 500px;;
+  bottom: 0;
+  width: 70%;
+  background-color: rgb(178, 170, 170); /* apni pasand ka color */
+  color: rgb(15, 14, 14);
+  text-align: center;
+  padding: 5px;
+}        
+    </style>
+
+</head>
+
+<body>
+ 
+<header class="navbar">
+  <h1 class="logo" class="rounded-text">NETFLIX</h1>
+  <div class="nav-right">
+    <select class="language"  >  <i class="bi bi-translate"></i>
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+    </select>
+    <button class="signin">Sign In</button>
+  </div>
+</header>
+
+<main> 
+<div class="overlay">
+  <h1 size="80px">Unlimited movies, TV shows and more</h1>
+  <p font-style="bold" font-size="50px">Starts at ₹149. Cancel anytime.</p>
+  <p>Ready to watch? Enter your email to create or restart your membership.</p>
+  <div class="input-box">
+    <input type="email" placeholder="Email address">
+    <button>Get Started ></span></button>
+  </div><br>
+  
+ 
+ <marquee>
+  <footer>
+    <p>Questions? Call 000-800-040-1843</p>
+    <p>FAQ | Privacy Policy | Terms of Use | Cookie Preferences | Corporate Information</p>
+  </footer>
+  </marquee>
+
+  </main>
+</div>
+
+
+
+
+
+    <!-- <div class="container">
+        <div>
+         <h1>Unlimited movies , TV shows and more.</h1>
+         <p>Watch anywhere. Cancel anytime.</p>
+         <p>Ready to watch? Enter your email to create or restart your membership.</p>
+         <div>
+             <input type="email" placeholder="Email address">
+             <button>Get Started</button>
+         </div>
+        </div> -->
+    </div>
+    
+</body>
+</html>
